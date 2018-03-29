@@ -1,0 +1,14 @@
+@import "fonts";
+@import "colors";
+@import "images";
+
+@media screen and (max-width: 768px) {
+  @import "xs";
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  @import "sm";
+}
+
+.test{
+  color:#f00;
+}

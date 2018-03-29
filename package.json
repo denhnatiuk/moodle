@@ -1,0 +1,31 @@
+{
+  "name": "moodle",
+  "version": "1.0.0",
+  "description": "landing page",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp",
+    "dist": "gulp --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DenysHnatiuk/moodle.git"
+  },
+  "author": "Den Hnatiuk <denys.hnatiuk@gmail.com>",
+  "license": "SEE LICENSE IN license.txt",
+  "bugs": {
+    "url": "https://github.com/DenysHnatiuk/moodle/issues"
+  },
+  "homepage": "https://github.com/DenysHnatiuk/moodle#readme",
+  "devDependencies": {
+    "autoprefixer": "^8.2.0",
+    "browser-sync": "^2.23.6",
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-bower": "0.0.14",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^3.2.1",
+    "wiredep": "^4.0.0"
+  }
+}
