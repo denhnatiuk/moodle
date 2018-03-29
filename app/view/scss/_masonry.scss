@@ -1,0 +1,98 @@
+.masonry-active img{
+  display: block;
+  width:500px;
+  max-width:50%;
+  margin-right: 45px;
+  margin-bottom: 15px;
+  float: left;
+}
+.masonry-description{
+  display: block;
+}
+.masonry-title, .masonry-list__title{
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+/* fluid 4 columns */
+.grid-sizer{
+  width:22.5%;
+  margin-left: 0.5%;
+  margin-righty: 0.5%;
+}
+.grid-item {
+  width:22%;
+  height: 180px;
+  margin-left: 0.5%;
+  margin-righty: 0.5%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+/* 2 columns wide */
+.grid-item--width2 {
+  width: 45%;
+  height: 180px;
+  margin-left: 0.5%;
+  margin-righty: 0.5%;
+  margin-bottom: 5px;
+}
+.grid-item--height2 {
+  width: 22.5%;
+  height: 370px;
+  margin-left: 0.5%;
+  margin-righty: 0.5%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+// .gigante{
+//   width:100%;
+//   height: 320px;
+// }
+.masonry1{
+  background-image: linear-gradient(to left, rgba(245,245,244,0.5) 0%, rgba(245,245,244,0.5)  100%), url(../images/masonry1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.masonry2{
+  background-image: url(../images/masonry2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.masonry3{
+  background-image: url(../images/masonry3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.masonry4{
+  background-image: url(../images/masonry4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.masonry5{
+  background-image: url(../images/masonry5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.masonry6{
+  background-image: url(../images/masonry6.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.masonry7{
+  background-image: url(../images/masonry7.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.masonry8{
+  background-image: url(../images/masonry8.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -1,0 +1,18 @@
+.navbar-inverse .navbar-collapse {
+  background-color: rgba(0,0,0,0.5);
+}
+.page-title{
+  margin-top: 40%;
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 36px;
+}
+#top{
+  background-image: url(../images/top-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50% contain;
+}
+#top>.row{
+  background: linear-gradient(to left, rgba(245,245,244,0.6) 0%, rgba(245,245,244,0.8)  100%);
+}

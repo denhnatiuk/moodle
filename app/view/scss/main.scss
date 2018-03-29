@@ -2,13 +2,126 @@
 @import "colors";
 @import "images";
 
-@media screen and (max-width: 768px) {
-  @import "xs";
+.page-header{
+  height:80px;
+  margin-top:0;
+  margin-bottom:0;
+  // padding:0;
+  border: 0;
 }
+.navbar-inverse{
+  border: 0;
+  margin: 0 auto;
+}
+.navbar-brand{
+  display: block;
+  box-sizing: border-box;
+  height: 80px;
+  width: 86px;
+  margin-right: 3rem;
+}
+.navbar-collapse.collapse.in, .navbar-collapse.collapsing{
+  width:50%;
+  padding-left: 0;
+  position: absolute;
+  right:15px;
+}
+.navbar-inverse .navbar-nav>li>a{
+  padding-left: 0;
+}
+.navbar-inverse .navbar-nav{
+  padding: 15px;
+  margin: 0;
+}
+
+#top, #top>.row{
+  max-height: 80vh;
+  height: 720px;
+  padding-top: 0;
+}
+#top>.container{
+  min-width: 400px;
+  width:80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.page-title{
+  display: block;
+  margin-top: 20%;
+}
+.btn-yellow{
+  display: block;
+  width:300px;
+  margin: 0 auto;
+  border: 0;
+  border-radius: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.btn-blue{
+  display: block;
+  width:300px;
+  border: 0;
+  border-radius: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.section{
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.text-last{
+  margin-bottom: 40px;
+}
+.page-footer{
+  height:80px;
+  margin:0;
+  padding:0;
+}
+.navbar-bottom{
+  & ul {
+    list-style-type: none;
+    margin:0;
+  }
+  & .navbar-brand{
+    display: block;
+    float: left;
+  }
+  & .navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: right;
+    margin: 0;
+    border:0;
+    height: 80px;
+  }
+}
+.navbar-bottom>.navbar>ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.navbar-bottom>.navbar>ul>li{
+  margin-left: 2rem;
+}
+#couchers{
+}
+.section-header{
+  margin-bottom: 4rem;
+}
+
+
+
+@import "jcarousel";
+@import "masonry";
+
+
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   @import "sm";
 }
-
-.test{
-  color:#f00;
+@media screen and (max-width: 768px) {
+  @import "xs";
 }
