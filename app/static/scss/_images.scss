@@ -1,0 +1,47 @@
+.navbar-brand{
+  background-image: url(../images/brand-logo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#top{
+  background-image: url(../images/top-bg.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain 100%;
+}
+#top>.row{
+  background: linear-gradient(to left, rgba(245,245,244,0) 0%, rgba(245,245,244,1)  100%);
+}
+#couchers .jcarousel-wrapper{
+  // overflow: hidden;
+  &:before{
+    display: inline-block;
+    content: "";
+    width:300px;
+    height: 450px;
+    position: absolute;
+    top:0;
+    left:-60%;
+    z-index: 2;
+    background-image: url(../images/couches1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &:after{
+    display: inline-block;
+    content: "";
+    width:30%;
+    height: 450px;
+    position: absolute;
+    // top:-450px;
+    top: 0;
+    right:-60%;
+    z-index: 2;
+    background-image: url(../images/couches2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
