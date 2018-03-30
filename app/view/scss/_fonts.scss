@@ -33,21 +33,37 @@ body{
 .navbar-inverse .navbar-nav>li{
   font-family: "MyriadPro";
   font-weight: 200;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 22px;
+  margin-left: 3.25rem;
+  &:first-child{
+    margin-left: 3.75rem;
+  }
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
   text-decoration: underline;
 }
 .text-heavy{
+  font-size: 19px;
   font-weight: 600;
+  font-stretch: extra-expanded;
+  margin-bottom: 3rem;
+}
+.text{
+  font-size: 19px;
+  font-weight: normal;
+  font-stretch: extra-expanded;
+  margin-bottom: 3rem;
+}
+.section-header{
+  font-size: 42px;
 }
 
 .page-title{
     font-family: 'LatoWebLight', 'Lato';
     font-size: 72px;
-    line-height: 80px;
+    line-height: 94px;
     text-align: center;
 }
 #couchers .section-header, #modules .section-header{

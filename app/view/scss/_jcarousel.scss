@@ -2,6 +2,7 @@
     margin: 20px auto;
     position: relative;
     border: none;
+    overflow: visible;
 }
 
 /** Carousel **/
@@ -37,6 +38,7 @@
 .jcarousel li .couch-name{
   color: #0082c0;
   font-family: 'LatoWebLight';
+  font-size: 20px;
   font-weight: 700;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -44,6 +46,7 @@
 .jcarousel li .couch-occupation{
   font-family: 'LatoWebLight';
   font-weight: 700;
+  font-size: 20px;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -52,6 +55,7 @@
 .jcarousel-control-prev,
 .jcarousel-control-next {
     position: absolute;
+    z-index: 5;
     top: 50%;
     margin-top: -15px;
     width: 30px;
@@ -59,11 +63,18 @@
     text-align: center;
     color: #ffc627;
     text-decoration: none;
-    font: 24px/27px Arial, sans-serif;
+    font-size: 22px;
+    line-height: 24px;
+    // font-family: Arial, sans-serif;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
     border: 1px solid #ffc627;
+    &:hover{
+      color: #0082c0;
+      border: 1px solid #0082c0;
+      text-decoration: none;
+    }
 }
 
 .jcarousel-control-prev {

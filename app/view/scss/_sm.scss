@@ -1,0 +1,12 @@
+#couchers .jcarousel-wrapper{
+  // overflow: hidden;
+  &:before{
+    display: none;
+  }
+  &:after{
+    display: none;
+  }
+}
+.navbar-inverse .navbar-collapse {
+  background-color: inherit;
+}

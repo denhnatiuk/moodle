@@ -14,7 +14,7 @@
   background: linear-gradient(to left, rgba(245,245,244,0) 0%, rgba(245,245,244,1)  100%);
 }
 #couchers .jcarousel-wrapper{
-  overflow: hidden;
+  // overflow: hidden;
   &:before{
     display: inline-block;
     content: "";
@@ -22,7 +22,7 @@
     height: 450px;
     position: absolute;
     top:0;
-    left:-300px;
+    left:-60%;
     z-index: 2;
     background-image: url(../images/couches1.png);
     background-position: center;
@@ -37,7 +37,7 @@
     position: absolute;
     // top:-450px;
     top: 0;
-    right:-300px;
+    right:-60%;
     z-index: 2;
     background-image: url(../images/couches2.png);
     background-position: center;

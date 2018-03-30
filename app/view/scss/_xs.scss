@@ -16,3 +16,61 @@
 #top>.row{
   background: linear-gradient(to left, rgba(245,245,244,0.6) 0%, rgba(245,245,244,0.8)  100%);
 }
+#couchers .jcarousel-wrapper{
+  // overflow: hidden;
+  &:before{
+    display: none;
+  }
+  &:after{
+    display: none;
+  }
+}
+.navbar-bottom{
+  & .navbar-brand{
+    margin-right: 0;
+  }
+  & .navbar{
+    width:60%;
+    font-size: 14px;
+    & ul{
+      padding:0;
+      // & li:first-child{
+      //   margin-left: 0;
+      // }
+    }
+  }
+}
+.masonry-active img{
+  display: block;
+  width:500px;
+  max-width:49%;
+  margin-right:1%;
+  margin-bottom: 15px;
+  float: left;
+}
+.navbar-bottom{
+  & ul {
+    list-style-type: none;
+    margin:0;
+  }
+  & .navbar-brand{
+    display: block;
+    float: left;
+  }
+  & .navbar{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    float: left;
+    margin: 0;
+    border:0;
+    height: 80px;
+  }
+}
+.navbar-bottom>.navbar>ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

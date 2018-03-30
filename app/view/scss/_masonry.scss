@@ -7,14 +7,26 @@
   float: left;
 }
 .masonry-description{
-  display: block;
+  // display: block;
+  float: left;
+  max-width: 50%;
+}
+.masonry-list{
+  padding: 0;
+  & li{
+    margin-left: 3rem;
+  }
 }
 .masonry-title, .masonry-list__title{
   font-size: 16px;
   font-weight: bold;
   text-align: center;
 }
-/* fluid 4 columns */
+.masonry-link{
+  color:#ffc627;
+  text-decoration: underline;
+}
+
 .grid-sizer{
   width:22.5%;
   margin-left: 0.5%;
@@ -34,64 +46,85 @@
   height: 180px;
   margin-left: 0.5%;
   margin-righty: 0.5%;
+  margin-top: 5px;
   margin-bottom: 5px;
 }
 .grid-item--height2 {
-  width: 22.5%;
+  width: 22%;
   height: 370px;
   margin-left: 0.5%;
   margin-righty: 0.5%;
   margin-bottom: 5px;
   margin-top: 5px;
 }
+.grid-item h4, .grid-item--width2 h4, .grid-item--height2 h4{
+  text-align:center;
+  color:white;
+  width:100%;
+}
+.grid-item h4{
+  position: absolute;
+  bottom: 10px;
+  left:0
+}
+.grid-item--width2 h4{
+  position: absolute;
+  bottom: 10px;
+  left:0
+}
+.grid-item--height2 h4{
+  position: absolute;
+  bottom: 10px;
+  left:0
+}
 // .gigante{
 //   width:100%;
 //   height: 320px;
 // }
 .masonry1{
-  background-image: linear-gradient(to left, rgba(245,245,244,0.5) 0%, rgba(245,245,244,0.5)  100%), url(../images/masonry1.png);
+  background-image: linear-gradient(to left, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5)  100%), url(../images/masonry1.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .masonry2{
-  background-image: url(../images/masonry2.png);
+  background-image: linear-gradient(to left, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5)  100%),  url(../images/masonry2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .masonry3{
-  background-image: url(../images/masonry3.png);
+  background-image: linear-gradient(to left, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5)  100%),  url(../images/masonry3.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .masonry4{
-  background-image: url(../images/masonry4.png);
+  background-image: linear-gradient(to left, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5)  100%),  url(../images/masonry4.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .masonry5{
-  background-image: url(../images/masonry5.png);
+  background-image: linear-gradient(to left, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5)  100%),  url(../images/masonry5.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .masonry6{
-  background-image: url(../images/masonry6.png);
+  background-image: linear-gradient(to left, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5)  100%),  url(../images/masonry6.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .masonry7{
-  background-image: url(../images/masonry7.png);
+  background-image: linear-gradient(to left, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5)  100%),  url(../images/masonry7.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .masonry8{
-  background-image: url(../images/masonry8.png);
+  background-image: linear-gradient(to left, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5)  100%),  url(../images/masonry8.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

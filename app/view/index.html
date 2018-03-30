@@ -36,9 +36,9 @@
         <div class="collapse navbar-collapse" id="navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Главная</a></li>
-            <li><a href="#">Модули</a></li>
-            <li><a href="#">Тренеры</a></li>
-            <li><a href="#">О программе</a></li>
+            <li><a href="#about">О программе</a></li>
+            <li><a href="#couchers">Тренеры</a></li>
+            <li><a href="#modules">Модули</a></li>
           </ul>
         </div>
       </div>
@@ -126,24 +126,16 @@
           </div>
           <div id="masonry" class="grid js-masonry">
             <div class="grid-sizer"></div>
-            <div class="grid-item masonry1">Модуль 3</div>
-            <div class="grid-item--height2 masonry7">Модуль 4</div>
-            <div class="grid-item masonry2">Модуль 2</div>
-            <div class="grid-item--height2 masonry8">Модуль 5</div>
-            <div class="grid-item masonry3">Модуль 6</div>
-            <div class="grid-item masonry4">Модуль 7</div>
-            <div class="grid-item--width2 masonry5">Модуль 8</div>
-            <div class="grid-item--width2 masonry6">Модуль 1</div>
-
-
-            <!-- <img src="./images/masonry1.png" alt="" >
-            <img src="./images/masonry2.png" alt="" class="grid-item" >
-            <img src="./images/masonry3.png" alt="" class="grid-item grid-item--height2" >
-            <img src="./images/masonry4.png" alt="" class="grid-item" >
-            <img src="./images/masonry5.png" alt="" class="grid-item" >
-            <img src="./images/masonry6.png" alt="" class="grid-item grid-item--height2" >
-            <img src="./images/masonry7.png" alt="" class="grid-item grid-item--width2" >
-            <img src="./images/masonry8.png" alt="" class="grid-item grid-item--width2" > -->
+            <div class="grid-item masonry1">
+              <h4>Модуль 3 <br> Руководство командой</h4>
+            </div>
+            <div class="grid-item--height2 masonry7"><h4>Модуль 3 <br> Руководство командой</h4></div>
+            <div class="grid-item masonry2"><h4>Модуль 3 <br> Руководство командой</h4></div>
+            <div class="grid-item--height2 masonry8"><h4>Модуль 3 <br> Руководство командой</h4></div>
+            <div class="grid-item masonry3"><h4>Модуль 3 <br> Руководство командой</h4></div>
+            <div class="grid-item masonry4"><h4>Модуль 3 <br> Руководство командой</h4></div>
+            <div class="grid-item--width2 masonry5"><h4>Модуль 3 <br> Руководство командой</h4></div>
+            <div class="grid-item--width2 masonry6"><h4>Модуль 3 <br> Руководство командой</h4></div>
             <div class="layout"></div>
           </div>
         </div>
@@ -155,10 +147,10 @@
       <div class="navbar-brand"></div>
       <nav class="navbar">
         <ul>
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Модули</a></li>
-          <li><a href="#">Тренеры</a></li>
-          <li><a href="#">О программе</a></li>
+          <li><a href="#top">Главная</a></li>
+          <li><a href="#modules">Модули</a></li>
+          <li><a href="#couchers">Тренеры</a></li>
+          <li><a href="#about">О программе</a></li>
         </ul>
       </nav>
     </div>
@@ -170,13 +162,13 @@
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script src="./js/main.js" charset="utf-8"></script>
   <script>
-      var $grid = $('.grid').masonry();
-    // change size of item by toggling gigante class
-    $grid.on( 'click', '.grid-item', function() {
-      $(this).toggleClass('gigante');
-      // trigger layout after item size changes
-      $grid.masonry('layout');
-    });
+    //   var $grid = $('.grid').masonry();
+    // // change size of item by toggling gigante class
+    // $grid.on( 'click', '.grid-item', function() {
+    //   $(this).toggleClass('gigante');
+    //   // trigger layout after item size changes
+    //   $grid.masonry('layout');
+    // });
   </script>
 </body>
 

@@ -26,19 +26,34 @@ body {
 .navbar-inverse .navbar-nav > li {
   font-family: "MyriadPro";
   font-weight: 200;
-  font-size: 20px;
-  line-height: 22px; }
+  font-size: 16px;
+  line-height: 22px;
+  margin-left: 3.25rem; }
+  .navbar-inverse .navbar-nav > li:first-child {
+    margin-left: 3.75rem; }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
   text-decoration: underline; }
 
 .text-heavy {
-  font-weight: 600; }
+  font-size: 19px;
+  font-weight: 600;
+  font-stretch: extra-expanded;
+  margin-bottom: 3rem; }
+
+.text {
+  font-size: 19px;
+  font-weight: normal;
+  font-stretch: extra-expanded;
+  margin-bottom: 3rem; }
+
+.section-header {
+  font-size: 42px; }
 
 .page-title {
   font-family: 'LatoWebLight', 'Lato';
   font-size: 72px;
-  line-height: 80px;
+  line-height: 94px;
   text-align: center; }
 
 #couchers .section-header, #modules .section-header {
@@ -96,40 +111,42 @@ a {
 #top > .row {
   background: linear-gradient(to left, rgba(245, 245, 244, 0) 0%, #f5f5f4 100%); }
 
-#couchers .jcarousel-wrapper {
-  overflow: hidden; }
-  #couchers .jcarousel-wrapper:before {
-    display: inline-block;
-    content: "";
-    width: 300px;
-    height: 450px;
-    position: absolute;
-    top: 0;
-    left: -300px;
-    z-index: 2;
-    background-image: url(../images/couches1.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain; }
-  #couchers .jcarousel-wrapper:after {
-    display: inline-block;
-    content: "";
-    width: 30%;
-    height: 450px;
-    position: absolute;
-    top: 0;
-    right: -300px;
-    z-index: 2;
-    background-image: url(../images/couches2.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain; }
+#couchers .jcarousel-wrapper:before {
+  display: inline-block;
+  content: "";
+  width: 300px;
+  height: 450px;
+  position: absolute;
+  top: 0;
+  left: -60%;
+  z-index: 2;
+  background-image: url(../images/couches1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+#couchers .jcarousel-wrapper:after {
+  display: inline-block;
+  content: "";
+  width: 30%;
+  height: 450px;
+  position: absolute;
+  top: 0;
+  right: -60%;
+  z-index: 2;
+  background-image: url(../images/couches2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
 
 .page-header {
   height: 80px;
   margin-top: 0;
   margin-bottom: 0;
   border: 0; }
+
+.navbar-top .navbar-nav {
+  margin-left: 5rem; }
 
 .navbar-inverse {
   border: 0;
@@ -140,7 +157,7 @@ a {
   box-sizing: border-box;
   height: 80px;
   width: 86px;
-  margin-right: 3rem; }
+  margin-right: 5rem; }
 
 .navbar-collapse.collapse.in, .navbar-collapse.collapsing {
   width: 50%;
@@ -177,16 +194,20 @@ a {
   margin: 0 auto;
   border: 0;
   border-radius: 0;
-  padding-left: 50px;
-  padding-right: 50px; }
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 70px;
+  padding-right: 70px; }
 
 .btn-blue {
   display: block;
   width: 300px;
   border: 0;
   border-radius: 0;
-  padding-left: 50px;
-  padding-right: 50px; }
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 75px;
+  padding-right: 75px; }
 
 .section {
   padding-top: 90px;
@@ -221,7 +242,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between; }
+  justify-content: flex-start; }
 
 .navbar-bottom > .navbar > ul > li {
   margin-left: 2rem; }
@@ -232,7 +253,8 @@ a {
 .jcarousel-wrapper {
   margin: 20px auto;
   position: relative;
-  border: none; }
+  border: none;
+  overflow: visible; }
 
 /** Carousel **/
 .jcarousel {
@@ -261,6 +283,7 @@ a {
 .jcarousel li .couch-name {
   color: #0082c0;
   font-family: 'LatoWebLight';
+  font-size: 20px;
   font-weight: 700;
   margin-top: 1rem;
   margin-bottom: 1rem; }
@@ -268,6 +291,7 @@ a {
 .jcarousel li .couch-occupation {
   font-family: 'LatoWebLight';
   font-weight: 700;
+  font-size: 20px;
   margin-top: 1rem;
   margin-bottom: 1rem; }
 
@@ -275,6 +299,7 @@ a {
 .jcarousel-control-prev,
 .jcarousel-control-next {
   position: absolute;
+  z-index: 5;
   top: 50%;
   margin-top: -15px;
   width: 30px;
@@ -282,11 +307,17 @@ a {
   text-align: center;
   color: #ffc627;
   text-decoration: none;
-  font: 24px/27px Arial, sans-serif;
+  font-size: 22px;
+  line-height: 24px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
   border: 1px solid #ffc627; }
+  .jcarousel-control-prev:hover,
+  .jcarousel-control-next:hover {
+    color: #0082c0;
+    border: 1px solid #0082c0;
+    text-decoration: none; }
 
 .jcarousel-control-prev {
   left: -15px; }
@@ -306,14 +337,23 @@ a {
   float: left; }
 
 .masonry-description {
-  display: block; }
+  float: left;
+  max-width: 50%; }
+
+.masonry-list {
+  padding: 0; }
+  .masonry-list li {
+    margin-left: 3rem; }
 
 .masonry-title, .masonry-list__title {
   font-size: 16px;
   font-weight: bold;
   text-align: center; }
 
-/* fluid 4 columns */
+.masonry-link {
+  color: #ffc627;
+  text-decoration: underline; }
+
 .grid-sizer {
   width: 22.5%;
   margin-left: 0.5%;
@@ -333,63 +373,92 @@ a {
   height: 180px;
   margin-left: 0.5%;
   margin-righty: 0.5%;
+  margin-top: 5px;
   margin-bottom: 5px; }
 
 .grid-item--height2 {
-  width: 22.5%;
+  width: 22%;
   height: 370px;
   margin-left: 0.5%;
   margin-righty: 0.5%;
   margin-bottom: 5px;
   margin-top: 5px; }
 
+.grid-item h4, .grid-item--width2 h4, .grid-item--height2 h4 {
+  text-align: center;
+  color: white;
+  width: 100%; }
+
+.grid-item h4 {
+  position: absolute;
+  bottom: 10px;
+  left: 0; }
+
+.grid-item--width2 h4 {
+  position: absolute;
+  bottom: 10px;
+  left: 0; }
+
+.grid-item--height2 h4 {
+  position: absolute;
+  bottom: 10px;
+  left: 0; }
+
 .masonry1 {
-  background-image: linear-gradient(to left, rgba(245, 245, 244, 0.5) 0%, rgba(245, 245, 244, 0.5) 100%), url(../images/masonry1.png);
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../images/masonry1.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
 
 .masonry2 {
-  background-image: url(../images/masonry2.png);
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../images/masonry2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
 
 .masonry3 {
-  background-image: url(../images/masonry3.png);
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../images/masonry3.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
 
 .masonry4 {
-  background-image: url(../images/masonry4.png);
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../images/masonry4.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
 
 .masonry5 {
-  background-image: url(../images/masonry5.png);
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../images/masonry5.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
 
 .masonry6 {
-  background-image: url(../images/masonry6.png);
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../images/masonry6.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
 
 .masonry7 {
-  background-image: url(../images/masonry7.png);
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../images/masonry7.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
 
 .masonry8 {
-  background-image: url(../images/masonry8.png);
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../images/masonry8.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  #couchers .jcarousel-wrapper:before {
+    display: none; }
+  #couchers .jcarousel-wrapper:after {
+    display: none; }
+  .navbar-inverse .navbar-collapse {
+    background-color: inherit; } }
 
 @media screen and (max-width: 768px) {
   .navbar-inverse .navbar-collapse {
@@ -405,4 +474,42 @@ a {
     background-repeat: no-repeat;
     background-size: 50% contain; }
   #top > .row {
-    background: linear-gradient(to left, rgba(245, 245, 244, 0.6) 0%, rgba(245, 245, 244, 0.8) 100%); } }
+    background: linear-gradient(to left, rgba(245, 245, 244, 0.6) 0%, rgba(245, 245, 244, 0.8) 100%); }
+  #couchers .jcarousel-wrapper:before {
+    display: none; }
+  #couchers .jcarousel-wrapper:after {
+    display: none; }
+  .navbar-bottom .navbar-brand {
+    margin-right: 0; }
+  .navbar-bottom .navbar {
+    width: 60%;
+    font-size: 14px; }
+    .navbar-bottom .navbar ul {
+      padding: 0; }
+  .masonry-active img {
+    display: block;
+    width: 500px;
+    max-width: 49%;
+    margin-right: 1%;
+    margin-bottom: 15px;
+    float: left; }
+  .navbar-bottom ul {
+    list-style-type: none;
+    margin: 0; }
+  .navbar-bottom .navbar-brand {
+    display: block;
+    float: left; }
+  .navbar-bottom .navbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    float: left;
+    margin: 0;
+    border: 0;
+    height: 80px; }
+  .navbar-bottom > .navbar > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; } }
