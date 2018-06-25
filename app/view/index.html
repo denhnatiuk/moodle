@@ -224,7 +224,7 @@
                 <p class="masonry-text"><span class="bold">Тренер:</span>Андрей Венедиктов</p>
                 <p class="masonry-text"><span class="bold">Домашнее задание</span>Прочитать статью <a href="./docs/ВЛИЯНИЕ%20БЕЗ%20ПОЛНОМОЧИЙ%20СТАТЬЯ.docx" class="masonry-link">«Влияние без полномочий»</a></p>
                 <p class="masonry-text">
-                  
+
                 </p>
                 <ul class="masonry-list">
                   <span class="masonry-list__title">Даты обучения</span>
@@ -299,13 +299,13 @@
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script src="./js/main.js" charset="utf-8"></script>
   <script>
-    //   var $grid = $('.grid').masonry();
-    // // change size of item by toggling gigante class
-    // $grid.on( 'click', '.grid-item', function() {
-    //   $(this).toggleClass('gigante');
-    //   // trigger layout after item size changes
-    //   $grid.masonry('layout');
-    // });
+      var $grid = $('.grid').masonry();
+    // change size of item by toggling gigante class
+    $grid.on( 'click', '.grid-item', function() {
+      $(this).toggleClass('gigante');
+      // trigger layout after item size changes
+      $grid.masonry('layout');
+    });
   </script>
 </body>
 
